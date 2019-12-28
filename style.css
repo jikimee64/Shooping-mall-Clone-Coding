@@ -1,0 +1,160 @@
+/* Reset */
+body,
+ul,
+li,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+/* Typography */
+html {
+  font-family: sans-serif;
+  line-height: 1.4;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  color: #666;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* Commons */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* float 문제 해결 */
+.clearfix:after {
+  clear: both;
+}
+
+.l_wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Layouts */
+
+/* Components */
+body {
+  background-color: #999;
+}
+
+.header {
+  background-color: black;
+}
+
+.header-inside {
+  color: #888;
+  background-color: #111;
+  font-size: 1.15rem;
+}
+
+.header-menu-left {
+  float: left;
+  margin-left: -15px;
+}
+
+.header-menu-left li {
+  float: left;
+}
+
+.header-menu-left li a {
+  /* border: 1px solid red; */
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  margin: 0 15px;
+  position: relative;
+}
+
+.header-menu-left li a:before {
+  content: " ";
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  margin: 0 100px;
+  transition: margin 1s;
+}
+
+.header-menu-left li a:hover {
+  color: #fff;
+}
+
+.header-menu-left li a:hover:before {
+  margin: 0;
+}
+
+.header-menu-left li a:after {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  line-height: 0.5em;
+  background-color: white;
+  right: -1.5em;
+  border-radius: 3px;
+  top: 0;
+  bottom: 0;
+  opacity: 0.3;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.header-menu-right {
+  float: right;
+}
+
+.header-menu-right li {
+  color: white;
+  float: left;
+}
+
+.header-menu-right li a {
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 15px;
+}
+
+.cover {
+  background-color: orangered;
+}
+
+.footer {
+  background-color: dodgerblue;
+}
+
+/* Mediaqueries */
