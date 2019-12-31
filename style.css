@@ -78,11 +78,12 @@ body {
   color: #888;
   background-color: #111;
   font-size: 1.15rem;
+  padding: 0 25px;
 }
 
 .header-menu-left {
   float: left;
-  margin-left: -15px;
+  margin-left: -38px;
 }
 
 .header-menu-left li {
@@ -94,7 +95,7 @@ body {
   display: block;
   line-height: 40px;
   height: 40px;
-  margin: 0 15px;
+  margin: 0 14px;
   position: relative;
 }
 
@@ -133,11 +134,18 @@ body {
   margin-bottom: 1.2em;
 }
 
+/* 마지막 | 없엠 */
+.header-menu-left .last:after {
+  display: none;
+}
+
 .header-menu-right {
+  /* background-color: orangered; */
   float: right;
 }
 
 .header-menu-right li {
+  /* border: 2px solid dodgerblue; */
   color: white;
   float: left;
 }
@@ -147,14 +155,153 @@ body {
   line-height: 40px;
   height: 40px;
   padding: 0 15px;
+  position: relative;
 }
 
-.cover {
+.header-menu-right li a:after {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  line-height: 0.5em;
+  background-color: white;
+  right: -0.1em;
+  border-radius: 3px;
+  top: 0;
+  bottom: 0;
+  opacity: 0.3;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+/* 마지막 없앰 */
+.header-menu-right .end:after {
+  display: none;
+}
+
+.header-menu-right .end:after {
+  background-color: black;
+  opacity: 1;
+  position: absolute;
+  right: -25%;
+  top: 40%;
+  transform: translateY(-50%);
+  content: " ";
+  width: 0;
+  height: 0px;
+  border-width: 10px 8px;
+  border-style: solid;
+  border-color: currentColor transparent transparent transparent;
+  display: inline-block;
+}
+
+.header2 {
+  background-color: white;
+}
+
+.logo {
+  margin-left: -0.7em;
+  margin-right: 8.5em;
+  text-indent: -9999px;
+  overflow: hidden;
+  float: left;
+  background-image: url(images/header-logo.png);
+  width: 100px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu {
+  /* background-color: orangered; */
+}
+
+.menu li {
+  /* background-color: black; */
+  float: left;
+  font-size: 0.9em;
+}
+
+.menu li a {
+  color: black;
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  margin: 0 16px;
+  position: relative;
+}
+
+.menu li a:before {
+  content: " ";
+  position: absolute;
+  background-color: black;
+  color: black;
+  left: 0;
+  right: 0;
+  bottom: 27px;
+  height: 1px;
+  margin: 0 100px;
+  transition: margin 0.01s;
+}
+
+/* .menu li a:hover {
+  color: #fff;
+}  */
+
+.menu li a:hover:before {
+  margin: 0;
+}
+
+/* .picture {
+  background-color: red;
+  float: right;
+  position: relative;
+   display:block; 
+}
+
+.picture li {
+  background-color: saddlebrown;
+  float: left;
+  padding: 0 10px;
+   top: 50%; 
+} */
+
+.woo2 {
+  background-color: deeppink;
+  float: right;
+}
+
+.woo2 li {
+  float: left;
+  padding: 0 10px;
+}
+
+.picture {
+  background-color: black;
+}
+
+.header-logo {
+  position: absolute;
+  background-color: darkorange;
+  background-image: url(images/search2.png);
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+.header-logo2 {
+  display: block;
+  background-color: #999;
+  text-indent: -9999px;
+  background-image: url(images/bag.png);
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+/* .cover {
   background-color: orangered;
 }
 
 .footer {
   background-color: dodgerblue;
-}
+} */
 
 /* Mediaqueries */
