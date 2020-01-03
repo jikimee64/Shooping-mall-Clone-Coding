@@ -63,11 +63,56 @@ h6 {
   margin: 0 auto;
 }
 
+.l_col {
+  float: left;
+  width: 33.33333333%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.l_col_12_12 {
+  width: 100%;
+}
+.l_col_11_12 {
+  width: 91.66666667%;
+}
+.l_col_10_12 {
+  width: 83.33333333%;
+}
+.l_col_9_12 {
+  width: 75%;
+}
+.l_col_8_12 {
+  width: 66.66666667%;
+}
+.l_col_7_12 {
+  width: 58.33333333%;
+}
+.l_col_6_12 {
+  width: 50%;
+}
+.l_col_5_12 {
+  width: 41.66666667%;
+}
+.l_col_4_12 {
+  width: 33.33333333%;
+}
+.l_col_3_12 {
+  width: 25%;
+}
+.l_col_2_12 {
+  width: 16.66666667%;
+}
+.l_col_1_12 {
+  width: 8.33333333%;
+}
+
 /* Layouts */
 
 /* Components */
 body {
-  background-color: #999;
+  background-color: white;
 }
 
 .header {
@@ -265,16 +310,6 @@ body {
    top: 50%; 
 } */
 
-.woo2 {
-  background-color: deeppink;
-  float: right;
-}
-
-.woo2 li {
-  float: left;
-  padding: 0 10px;
-}
-
 .picture {
   background-color: black;
 }
@@ -294,6 +329,41 @@ body {
   background-image: url(images/bag.png);
   /* background-position: center; */
   background-repeat: no-repeat;
+}
+
+.detail {
+  background-color: white;
+  position: relative;
+}
+
+.detail-header {
+  position: relative;
+}
+
+.detail-title {
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 250px;
+}
+
+.item {
+  /* background-color: #999; */
+  padding-left: 10px;
+}
+
+.item h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.item p {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
 }
 
 /* .cover {
