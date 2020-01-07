@@ -136,7 +136,6 @@ body {
 }
 
 .header-menu-left li a {
-  /* border: 1px solid red; */
   display: block;
   line-height: 40px;
   height: 40px;
@@ -185,12 +184,10 @@ body {
 }
 
 .header-menu-right {
-  /* background-color: orangered; */
   float: right;
 }
 
 .header-menu-right li {
-  /* border: 2px solid dodgerblue; */
   color: white;
   float: left;
 }
@@ -255,13 +252,33 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+.woos {
+  position: relative;
+}
 
-.menu {
-  /* background-color: orangered; */
+.keke {
+  float: right;
+  position: absolute;
+  right: 0%;
+  transform: translateY(35%);
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.keke li {
+  /* background-color: red; */
+  float: left;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.menu img {
+  background-color: orangered;
 }
 
 .menu li {
-  /* background-color: black; */
   float: left;
   font-size: 0.9em;
 }
@@ -362,16 +379,88 @@ body {
 }
 
 .item p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 2.2rem;
 }
 
 /* .cover {
   background-color: orangered;
-}
+}*/
 
 .footer {
-  background-color: dodgerblue;
-} */
+  margin-top: 50px;
+}
+
+.end_one {
+  border-top: 1px solid rgba(230, 230, 230);
+  border-bottom: 1px solid rgba(230, 230, 230);
+  padding: 5px 20px;
+  position: relative;
+}
+
+.footer-menu-left {
+  float: left;
+  margin-left: -28px;
+}
+
+.footer-menu-left .footer-logo {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.footer-menu-left li {
+  font-size: 1.2rem;
+  line-height: 30px;
+  float: left;
+  margin: 5px 21px;
+  font-weight: bold;
+}
+
+.footer-menu-right {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  float: right;
+}
+
+.footer-menu-right h3 {
+  font-size: 1.2rem;
+  line-height: 2.5;
+}
+
+.footer-menu-right img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer-menu-right li {
+  float: left;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.end_two {
+  font-size: 1.1rem;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.end_two a {
+  font-weight: bold;
+}
+
+.end_two_two {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.end_two_two button {
+  font-size: 1.1rem;
+  border: 1px solid rgba(230, 230, 230);
+  background-color: white;
+  padding: 5px;
+}
 
 /* Mediaqueries */
