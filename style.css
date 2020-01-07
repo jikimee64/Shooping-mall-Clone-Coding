@@ -115,7 +115,7 @@ body {
   background-color: white;
 }
 
-.header {
+.header-top {
   background-color: black;
 }
 
@@ -178,7 +178,7 @@ body {
   margin-bottom: 1.2em;
 }
 
-/* 마지막 | 없엠 */
+/* 마지막 '|' 없엠 */
 .header-menu-left .last:after {
   display: none;
 }
@@ -236,11 +236,15 @@ body {
   display: inline-block;
 }
 
-.header2 {
+.header-bottom {
   background-color: white;
 }
 
-.logo {
+.header-bottom-inside {
+  position: relative;
+}
+
+.site-logo {
   margin-left: -0.7em;
   margin-right: 8.5em;
   text-indent: -9999px;
@@ -252,38 +256,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-.woos {
-  position: relative;
-}
 
-.keke {
-  float: right;
-  position: absolute;
-  right: 0%;
-  transform: translateY(35%);
-  display: inline-block;
-  vertical-align: middle;
-  margin: auto;
-}
-
-.keke li {
-  /* background-color: red; */
-  float: left;
-  padding: 10px;
-  width: 20px;
-  height: 20px;
-}
-
-.menu img {
-  background-color: orangered;
-}
-
-.menu li {
+.header-bottom-menu li {
   float: left;
   font-size: 0.9em;
 }
 
-.menu li a {
+.header-bottom-menu li a {
   color: black;
   display: block;
   height: 70px;
@@ -292,7 +271,7 @@ body {
   position: relative;
 }
 
-.menu li a:before {
+.header-bottom-menu li a:before {
   content: " ";
   position: absolute;
   background-color: black;
@@ -305,47 +284,25 @@ body {
   transition: margin 0.01s;
 }
 
-/* .menu li a:hover {
-  color: #fff;
-}  */
-
-.menu li a:hover:before {
+.header-bottom-menu li a:hover:before {
   margin: 0;
 }
 
-/* .picture {
-  background-color: red;
+.header-bottom-logo {
   float: right;
-  position: relative;
-   display:block; 
-}
-
-.picture li {
-  background-color: saddlebrown;
-  float: left;
-  padding: 0 10px;
-   top: 50%; 
-} */
-
-.picture {
-  background-color: black;
-}
-
-.header-logo {
   position: absolute;
-  background-color: darkorange;
-  background-image: url(images/search2.png);
-  /* background-position: center; */
-  background-repeat: no-repeat;
+  right: 0%;
+  transform: translateY(35%);
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
 }
 
-.header-logo2 {
-  display: block;
-  background-color: #999;
-  text-indent: -9999px;
-  background-image: url(images/bag.png);
-  /* background-position: center; */
-  background-repeat: no-repeat;
+.header-bottom-logo li {
+  float: left;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .detail {
@@ -355,6 +312,11 @@ body {
 
 .detail-header {
   position: relative;
+}
+
+.detail-cover {
+  width: 20000px;
+  display: block;
 }
 
 .detail-title {
@@ -368,7 +330,6 @@ body {
 }
 
 .item {
-  /* background-color: #999; */
   padding-left: 10px;
 }
 
@@ -383,15 +344,11 @@ body {
   line-height: 2.2rem;
 }
 
-/* .cover {
-  background-color: orangered;
-}*/
-
 .footer {
   margin-top: 50px;
 }
 
-.end_one {
+.footer-top {
   border-top: 1px solid rgba(230, 230, 230);
   border-bottom: 1px solid rgba(230, 230, 230);
   padding: 5px 20px;
@@ -441,22 +398,22 @@ body {
   font-size: 1.2rem;
 }
 
-.end_two {
+.footer-bottom {
   font-size: 1.1rem;
   margin-top: 25px;
   margin-bottom: 5px;
 }
 
-.end_two a {
+.footer-bottom a {
   font-weight: bold;
 }
 
-.end_two_two {
+.footer-bottom-description {
   font-size: 1.1rem;
   margin-bottom: 30px;
 }
 
-.end_two_two button {
+.footer-bottom-description button {
   font-size: 1.1rem;
   border: 1px solid rgba(230, 230, 230);
   background-color: white;
